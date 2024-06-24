@@ -1,0 +1,152 @@
+*{
+    padding: 0px;
+    margin: 0%;
+    color: #ffffff;
+}
+body{
+    background-color: #001;
+    display: flex;
+    height: auto;
+    font-family: sans-serif;
+}
+.box {
+    background-color: #123;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+;
+  }
+  .box i {
+    font-size: 30px;
+  }
+  .box .data {
+    text-align: center;
+  }
+  .box .data p {
+    font-size: 20px;
+  }
+  .box .data span {
+    font-size: 28px;
+  }
+ul li a:hover, .box:hover, td:hover{
+    background-color: #ffffff33;
+}
+.content{
+    width: 100%;
+    margin: 10px;
+}
+.menu li.profile .img-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+    flex-shrink: 0;
+  }
+  .menu li.profile .img-box img {
+    width: 100%;
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .menu li .profile {
+      flex-direction: column;
+    }
+  .title-info p {
+    font-size: 24px;
+  }
+  .title-info {
+    background-color: #24f;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-size: 24px;
+  }
+  .data-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  table th {
+    background-color: #24f;
+  }
+  th,
+  td {
+    background-color: #123;
+    height: 40px;
+    border-radius: 20px;
+    padding: 6px;
+    margin: 10px;
+    text-align: center;
+    gap: 5px;
+  }
+  .price, .count {
+    padding: 6px;
+    border-radius: 6px;
+  }
+  .price {
+    background-color: rgb(8, 95, 37);
+  }
+  .count {
+    background-color: rgb(174, 174, 23);
+  }  
+  h2 {
+    font-size: 30px;
+  }
+  .menu {
+    background-color: #123;
+    width: 65px;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
+    transition: width 0.3s;
+  }
+  .menu:hover {
+    width: 260px;
+  }
+  i {
+    font-size: 30px;
+  }
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+    position: relative;
+    height: 100%;
+  }
+  ul li a{
+    display: block;
+    text-decoration:none ;
+    padding: 10px;
+    margin: 5px 0px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .3s;
+}
+  .log-out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .log-out a {
+    background-color: #c01127;
+  }
