@@ -9,6 +9,41 @@ body{
     height: auto;
     font-family: sans-serif;
 }
+.menu {
+    background-color: #123;
+    width: 65px;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
+    transition: width 0.3s;
+  }
+  .menu:hover {
+    width: 260px;
+  }
+  i {
+    font-size: 30px;
+  }
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+    position: relative;
+    height: 100%;
+  }
+  ul li a{
+    display: block;
+    text-decoration:none ;
+    padding: 10px;
+    margin: 5px 0px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .3s;
+}
+ul li a:hover, .box:hover, td:hover{
+    background-color: #ffffff33;
+}
 .box {
     background-color: #123;
     height: 150px;
@@ -19,7 +54,6 @@ body{
     align-items: center;
     justify-content: space-around;
     gap: 10px;
-;
   }
   .box i {
     font-size: 30px;
@@ -33,9 +67,6 @@ body{
   .box .data span {
     font-size: 28px;
   }
-ul li a:hover, .box:hover, td:hover{
-    background-color: #ffffff33;
-}
 .content{
     width: 100%;
     margin: 10px;
@@ -69,7 +100,7 @@ ul li a:hover, .box:hover, td:hover{
     align-items: center;
     justify-content: space-between;
     border-radius: 8px;
-    margin: 10px 0;
+    margin:     0px 0;
     font-size: 24px;
   }
   .data-info {
@@ -95,7 +126,6 @@ ul li a:hover, .box:hover, td:hover{
     padding: 6px;
     margin: 10px;
     text-align: center;
-    gap: 5px;
   }
   .price, .count {
     padding: 6px;
@@ -108,40 +138,9 @@ ul li a:hover, .box:hover, td:hover{
     background-color: rgb(174, 174, 23);
   }  
   h2 {
-    font-size: 30px;
+    font-size: 30px;    
   }
-  .menu {
-    background-color: #123;
-    width: 65px;
-    height: auto;
-    padding: 20px;
-    overflow: hidden;
-    transition: width 0.3s;
-  }
-  .menu:hover {
-    width: 260px;
-  }
-  i {
-    font-size: 30px;
-  }
-  .menu ul {
-    list-style: none;
-    padding: 0;
-    gap: 20px;
-    position: relative;
-    height: 100%;
-  }
-  ul li a{
-    display: block;
-    text-decoration:none ;
-    padding: 10px;
-    margin: 5px 0px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    transition: .3s;
-}
+
   .log-out {
     position: absolute;
     bottom: 0;
@@ -149,4 +148,12 @@ ul li a:hover, .box:hover, td:hover{
   }
   .log-out a {
     background-color: #c01127;
+  }
+  @media (max-width: 600px){
+    .box{
+        flex-basis: 10px;
+    }
+    .menu:hover{
+        width: 150%;
+    }
   }
